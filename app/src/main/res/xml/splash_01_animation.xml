@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@+id/start"
+        motion:duration="1000">
+
+        <KeyFrameSet>
+            <!-- line 1 -->
+            <KeyAttribute
+                android:translationX="-400dp"
+                motion:framePosition="0"
+                motion:motionTarget="@id/line1"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:translationX="8dp"
+                motion:framePosition="50"
+                motion:motionTarget="@id/line1"
+                motion:transitionEasing="decelerate" />
+
+            <KeyAttribute
+                android:translationX="-8dp"
+                motion:framePosition="55"
+                motion:motionTarget="@id/line1"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:translationX="0dp"
+                motion:framePosition="60"
+                motion:motionTarget="@id/line1"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                motion:framePosition="0"
+                motion:motionTarget="@id/line1"
+                motion:transitionEasing="accelerate">
+                <CustomAttribute
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#333" />
+            </KeyAttribute>
+
+            <KeyAttribute
+                motion:framePosition="65"
+                motion:motionTarget="@id/line1"
+                motion:transitionEasing="accelerate">
+                <CustomAttribute
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#333" />
+            </KeyAttribute>
+
+            <KeyAttribute
+                motion:framePosition="100"
+                motion:motionTarget="@id/line1"
+                motion:transitionEasing="accelerate">
+                <CustomAttribute
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#ccc" />
+            </KeyAttribute>
+
+            <!-- line 2 -->
+            <KeyAttribute
+                android:translationX="400dp"
+                motion:framePosition="0"
+                motion:motionTarget="@id/line2"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:translationX="-8dp"
+                motion:framePosition="50"
+                motion:motionTarget="@id/line2"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:translationX="8dp"
+                motion:framePosition="55"
+                motion:motionTarget="@id/line2"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:translationX="0dp"
+                motion:framePosition="60"
+                motion:motionTarget="@id/line2"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                motion:framePosition="0"
+                motion:motionTarget="@id/line2"
+                motion:transitionEasing="accelerate">
+                <CustomAttribute
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#333" />
+            </KeyAttribute>
+
+            <KeyAttribute
+                motion:framePosition="65"
+                motion:motionTarget="@id/line2"
+                motion:transitionEasing="accelerate">
+                <CustomAttribute
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#333" />
+            </KeyAttribute>
+
+            <KeyAttribute
+                motion:framePosition="100"
+                motion:motionTarget="@id/line2"
+                motion:transitionEasing="accelerate">
+                <CustomAttribute
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#ccc" />
+            </KeyAttribute>
+
+            <!-- View -->
+            <KeyAttribute
+                android:alpha="0"
+                motion:framePosition="0"
+                motion:motionTarget="@id/view"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="0"
+                motion:framePosition="60"
+                motion:motionTarget="@id/view"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                motion:framePosition="100"
+                motion:motionTarget="@id/view"
+                motion:transitionEasing="accelerate" />
+
+            <!-- Background -->
+            <KeyAttribute
+                motion:framePosition="0"
+                motion:motionTarget="@id/background"
+                motion:transitionEasing="accelerate">
+                <CustomAttribute
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#fff" />
+            </KeyAttribute>
+
+            <KeyAttribute
+                motion:framePosition="65"
+                motion:motionTarget="@id/background"
+                motion:transitionEasing="accelerate">
+                <CustomAttribute
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#fff" />
+            </KeyAttribute>
+
+            <KeyAttribute
+                motion:framePosition="100"
+                motion:motionTarget="@id/background"
+                motion:transitionEasing="accelerate">
+                <CustomAttribute
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#222" />
+            </KeyAttribute>
+
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/view"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/line1"
+            android:layout_width="200dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="8dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/view" />
+
+        <Constraint
+            android:id="@+id/line2"
+            android:layout_width="200dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="4dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/line1" />
+
+        <Constraint
+            android:id="@+id/background"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/view"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/line1"
+            android:layout_width="200dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="8dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/view" />
+
+        <Constraint
+            android:id="@+id/line2"
+            android:layout_width="200dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="4dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/line1" />
+
+        <Constraint
+            android:id="@+id/background"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+
+</MotionScene>

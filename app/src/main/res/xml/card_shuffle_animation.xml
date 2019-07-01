@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/endCard"
+        motion:constraintSetStart="@+id/startCard"
+        motion:duration="1000">
+
+        <!-- Swipe right to left which animate to the end position,
+        then from end position swipe left to right which animate to the start position -->
+        <OnSwipe motion:dragDirection="dragRight" />
+
+        <KeyFrameSet>
+            <!-- View1 -->
+            <KeyAttribute
+                android:scaleX="1"
+                android:scaleY="1"
+                android:translationX="0dp"
+                motion:framePosition="0"
+                motion:motionTarget="@id/view1"
+                motion:transitionEasing="decelerate">
+                <CustomAttribute
+                    motion:attributeName="elevation"
+                    motion:customDimension="8dp" />
+            </KeyAttribute>
+
+            <KeyAttribute
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                android:translationX="450dp"
+                motion:framePosition="40"
+                motion:motionTarget="@id/view1"
+                motion:transitionEasing="decelerate">
+                <CustomAttribute
+                    motion:attributeName="elevation"
+                    motion:customDimension="5dp" />
+            </KeyAttribute>
+
+            <KeyAttribute
+                motion:framePosition="50"
+                motion:motionTarget="@id/view1">
+                <CustomAttribute
+                    motion:attributeName="elevation"
+                    motion:customDimension="4dp" />
+            </KeyAttribute>
+
+            <KeyAttribute
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                android:translationX="450dp"
+                motion:framePosition="60"
+                motion:motionTarget="@id/view1"
+                motion:transitionEasing="decelerate">
+                <CustomAttribute
+                    motion:attributeName="elevation"
+                    motion:customDimension="3dp" />
+            </KeyAttribute>
+
+            <KeyAttribute
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:translationX="0dp"
+                motion:framePosition="100"
+                motion:motionTarget="@id/view1"
+                motion:transitionEasing="decelerate">
+                <CustomAttribute
+                    motion:attributeName="elevation"
+                    motion:customDimension="0dp" />
+            </KeyAttribute>
+
+            <!-- View2 -->
+            <KeyAttribute
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                motion:framePosition="0"
+                motion:motionTarget="@id/view2">
+                <CustomAttribute
+                    motion:attributeName="elevation"
+                    motion:customDimension="0dp" />
+            </KeyAttribute>
+
+            <KeyAttribute
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                motion:framePosition="30"
+                motion:motionTarget="@id/view2"
+                motion:transitionEasing="decelerate">
+                <CustomAttribute
+                    motion:attributeName="elevation"
+                    motion:customDimension="0dp" />
+            </KeyAttribute>
+
+            <KeyAttribute
+                motion:framePosition="49"
+                motion:motionTarget="@id/view2"
+                motion:transitionEasing="decelerate">
+                <CustomAttribute
+                    motion:attributeName="elevation"
+                    motion:customDimension="4dp" />
+            </KeyAttribute>
+
+            <KeyAttribute
+                motion:framePosition="50"
+                motion:motionTarget="@id/view2"
+                motion:transitionEasing="decelerate">
+                <CustomAttribute
+                    motion:attributeName="elevation"
+                    motion:customDimension="4dp" />
+            </KeyAttribute>
+
+            <KeyAttribute
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="100"
+                motion:motionTarget="@id/view2"
+                motion:transitionEasing="decelerate">
+                <CustomAttribute
+                    motion:attributeName="elevation"
+                    motion:customDimension="8dp" />
+            </KeyAttribute>
+
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/startCard">
+        <Constraint
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="1dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/endCard">
+        <Constraint
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="1dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+
+</MotionScene>

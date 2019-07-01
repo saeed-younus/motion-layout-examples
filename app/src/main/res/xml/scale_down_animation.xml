@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@+id/start"
+        motion:duration="1000">
+
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="0"
+                android:scaleX="20"
+                android:scaleY="20"
+                motion:framePosition="0"
+                motion:motionTarget="@id/textView"
+                motion:transitionEasing="decelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="80"
+                motion:motionTarget="@id/textView"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1.15"
+                android:scaleY="1.15"
+                motion:framePosition="85"
+                motion:motionTarget="@id/textView"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="90"
+                motion:motionTarget="@id/btn_card_shuffle"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1.08"
+                android:scaleY="1.08"
+                motion:framePosition="95"
+                motion:motionTarget="@id/textView"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="100"
+                motion:motionTarget="@id/textView"
+                motion:transitionEasing="accelerate" />
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+    </ConstraintSet>
+
+</MotionScene>

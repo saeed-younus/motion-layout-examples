@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <!--<Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@+id/start"
+        motion:duration="1000">
+
+        <KeyFrameSet>
+            &lt;!&ndash;<KeyAttribute
+                android:alpha="0"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                motion:framePosition="0"
+                motion:motionTarget="@id/text_app_name"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="100"
+                motion:motionTarget="@id/text_app_name"
+                motion:transitionEasing="accelerate" />&ndash;&gt;
+
+            &lt;!&ndash; Scaled to normal animation &ndash;&gt;
+            <KeyAttribute
+                android:alpha="0.2"
+                android:scaleX="20"
+                android:scaleY="20"
+                motion:framePosition="0"
+                motion:motionTarget="@id/text_app_name"
+                motion:transitionEasing="decelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="80"
+                motion:motionTarget="@id/text_app_name"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1.15"
+                android:scaleY="1.15"
+                motion:framePosition="85"
+                motion:motionTarget="@id/text_app_name"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="90"
+                motion:motionTarget="@id/text_app_name"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1.08"
+                android:scaleY="1.08"
+                motion:framePosition="95"
+                motion:motionTarget="@id/text_app_name"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="100"
+                motion:motionTarget="@id/text_app_name"
+                motion:transitionEasing="accelerate" />
+
+            &lt;!&ndash; Left to right animation &ndash;&gt;
+            &lt;!&ndash;<KeyAttribute
+                android:translationX="-300dp"
+                motion:curveFit="spline"
+                motion:framePosition="0"
+                motion:motionTarget="@id/text_app_name"
+                motion:transitionEasing="accelerate">
+                <CustomAttribute
+                    motion:attributeName="textColor"
+                    motion:customColorValue="#700" />
+            </KeyAttribute>
+
+            <KeyAttribute
+                android:translationX="0dp"
+                motion:curveFit="spline"
+                motion:framePosition="15"
+                motion:motionTarget="@id/text_app_name"
+                motion:transitionEasing="decelerate" >
+                <CustomAttribute
+                    motion:attributeName="textColor"
+                    motion:customColorValue="#111" />
+            </KeyAttribute>
+
+            <KeyAttribute
+                android:translationX="8dp"
+                motion:curveFit="spline"
+                motion:framePosition="20"
+                motion:motionTarget="@id/text_app_name"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:translationX="0dp"
+                motion:curveFit="spline"
+                motion:framePosition="25"
+                motion:motionTarget="@id/text_app_name"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:translationX="0dp"
+                motion:curveFit="spline"
+                motion:framePosition="75"
+                motion:motionTarget="@id/text_app_name"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:translationX="8dp"
+                motion:curveFit="spline"
+                motion:framePosition="80"
+                motion:motionTarget="@id/text_app_name"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:translationX="0dp"
+                motion:curveFit="spline"
+                motion:framePosition="85"
+                motion:motionTarget="@id/text_motion_name"
+                motion:transitionEasing="accelerate" >
+                <CustomAttribute
+                    motion:attributeName="textColor"
+                    motion:customColorValue="#111" />
+            </KeyAttribute>
+
+            <KeyAttribute
+                android:translationX="300dp"
+                motion:curveFit="spline"
+                motion:framePosition="100"
+                motion:motionTarget="@id/text_app_name"
+                motion:transitionEasing="accelerate" >
+                <CustomAttribute
+                    motion:attributeName="textColor"
+                    motion:customColorValue="#700" />
+            </KeyAttribute>&ndash;&gt;
+
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/button"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="8dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/button"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginEnd="8dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+-->
+    <Transition
+        motion:autoTransition="animateToEnd"
+        motion:constraintSetEnd="@+id/start"
+        motion:constraintSetStart="@+id/end"
+        motion:duration="2000">
+
+        <KeyFrameSet>
+            <!-- Button Left Right Animation -->
+            <KeyAttribute
+                android:alpha="0.2"
+                android:scaleX="10"
+                android:scaleY="10"
+                motion:framePosition="0"
+                motion:motionTarget="@id/btn_left_to_right"
+                motion:transitionEasing="decelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="10"
+                motion:motionTarget="@id/btn_left_to_right"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1.15"
+                android:scaleY="1.15"
+                motion:framePosition="15"
+                motion:motionTarget="@id/btn_left_to_right"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="20"
+                motion:motionTarget="@id/btn_left_to_right"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1.08"
+                android:scaleY="1.08"
+                motion:framePosition="25"
+                motion:motionTarget="@id/btn_left_to_right"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="30"
+                motion:motionTarget="@id/btn_left_to_right"
+                motion:transitionEasing="accelerate" />
+
+            <!-- Button Faded Animation -->
+            <KeyAttribute
+                android:alpha="0"
+                android:scaleX="10"
+                android:scaleY="10"
+                motion:framePosition="9"
+                motion:motionTarget="@id/btn_faded"
+                motion:transitionEasing="decelerate" />
+
+            <KeyAttribute
+                android:alpha="0.2"
+                android:scaleX="10"
+                android:scaleY="10"
+                motion:framePosition="10"
+                motion:motionTarget="@id/btn_faded"
+                motion:transitionEasing="decelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="20"
+                motion:motionTarget="@id/btn_faded"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1.15"
+                android:scaleY="1.15"
+                motion:framePosition="25"
+                motion:motionTarget="@id/btn_faded"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="30"
+                motion:motionTarget="@id/btn_faded"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1.08"
+                android:scaleY="1.08"
+                motion:framePosition="35"
+                motion:motionTarget="@id/btn_faded"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="40"
+                motion:motionTarget="@id/btn_faded"
+                motion:transitionEasing="accelerate" />
+
+            <!-- Button Scale down Animation -->
+            <KeyAttribute
+                android:alpha="0"
+                android:scaleX="10"
+                android:scaleY="10"
+                motion:framePosition="19"
+                motion:motionTarget="@id/btn_scale_down"
+                motion:transitionEasing="decelerate" />
+
+            <KeyAttribute
+                android:alpha="0.2"
+                android:scaleX="10"
+                android:scaleY="10"
+                motion:framePosition="20"
+                motion:motionTarget="@id/btn_scale_down"
+                motion:transitionEasing="decelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="30"
+                motion:motionTarget="@id/btn_scale_down"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1.15"
+                android:scaleY="1.15"
+                motion:framePosition="35"
+                motion:motionTarget="@id/btn_scale_down"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="40"
+                motion:motionTarget="@id/btn_scale_down"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1.08"
+                android:scaleY="1.08"
+                motion:framePosition="45"
+                motion:motionTarget="@id/btn_scale_down"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="50"
+                motion:motionTarget="@id/btn_scale_down"
+                motion:transitionEasing="accelerate" />
+
+            <!-- Button Card Shuffle Animation -->
+            <KeyAttribute
+                android:alpha="0"
+                android:scaleX="10"
+                android:scaleY="10"
+                motion:framePosition="29"
+                motion:motionTarget="@id/btn_card_shuffle"
+                motion:transitionEasing="decelerate" />
+
+            <KeyAttribute
+                android:alpha="0.2"
+                android:scaleX="10"
+                android:scaleY="10"
+                motion:framePosition="30"
+                motion:motionTarget="@id/btn_card_shuffle"
+                motion:transitionEasing="decelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="40"
+                motion:motionTarget="@id/btn_card_shuffle"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1.15"
+                android:scaleY="1.15"
+                motion:framePosition="45"
+                motion:motionTarget="@id/btn_card_shuffle"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="50"
+                motion:motionTarget="@id/btn_card_shuffle"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1.08"
+                android:scaleY="1.08"
+                motion:framePosition="55"
+                motion:motionTarget="@id/btn_card_shuffle"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="60"
+                motion:motionTarget="@id/btn_card_shuffle"
+                motion:transitionEasing="accelerate" />
+
+            <!-- Button Splash 1 Animation -->
+            <KeyAttribute
+                android:alpha="0"
+                android:scaleX="10"
+                android:scaleY="10"
+                motion:framePosition="39"
+                motion:motionTarget="@id/btn_splash01"
+                motion:transitionEasing="decelerate" />
+
+            <KeyAttribute
+                android:alpha="0.2"
+                android:scaleX="10"
+                android:scaleY="10"
+                motion:framePosition="40"
+                motion:motionTarget="@id/btn_splash01"
+                motion:transitionEasing="decelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="50"
+                motion:motionTarget="@id/btn_splash01"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1.15"
+                android:scaleY="1.15"
+                motion:framePosition="55"
+                motion:motionTarget="@id/btn_splash01"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="60"
+                motion:motionTarget="@id/btn_splash01"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1.08"
+                android:scaleY="1.08"
+                motion:framePosition="65"
+                motion:motionTarget="@id/btn_splash01"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="70"
+                motion:motionTarget="@id/btn_splash01"
+                motion:transitionEasing="accelerate" />
+
+
+            <!-- Button Splash 2 Animation -->
+            <KeyAttribute
+                android:alpha="0"
+                android:scaleX="10"
+                android:scaleY="10"
+                motion:framePosition="49"
+                motion:motionTarget="@id/btn_splash02"
+                motion:transitionEasing="decelerate" />
+
+            <KeyAttribute
+                android:alpha="0.2"
+                android:scaleX="10"
+                android:scaleY="10"
+                motion:framePosition="50"
+                motion:motionTarget="@id/btn_splash02"
+                motion:transitionEasing="decelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="60"
+                motion:motionTarget="@id/btn_splash02"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1.15"
+                android:scaleY="1.15"
+                motion:framePosition="65"
+                motion:motionTarget="@id/btn_splash02"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="70"
+                motion:motionTarget="@id/btn_splash02"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1.08"
+                android:scaleY="1.08"
+                motion:framePosition="75"
+                motion:motionTarget="@id/btn_splash02"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="80"
+                motion:motionTarget="@id/btn_splash02"
+                motion:transitionEasing="accelerate" />
+
+            <!-- Button Splash 3 Animation -->
+            <KeyAttribute
+                android:alpha="0"
+                android:scaleX="10"
+                android:scaleY="10"
+                motion:framePosition="59"
+                motion:motionTarget="@id/btn_splash03"
+                motion:transitionEasing="decelerate" />
+
+            <KeyAttribute
+                android:alpha="0.2"
+                android:scaleX="10"
+                android:scaleY="10"
+                motion:framePosition="60"
+                motion:motionTarget="@id/btn_splash03"
+                motion:transitionEasing="decelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="70"
+                motion:motionTarget="@id/btn_splash03"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1.15"
+                android:scaleY="1.15"
+                motion:framePosition="75"
+                motion:motionTarget="@id/btn_splash03"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="80"
+                motion:motionTarget="@id/btn_splash03"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1.08"
+                android:scaleY="1.08"
+                motion:framePosition="85"
+                motion:motionTarget="@id/btn_splash03"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="90"
+                motion:motionTarget="@id/btn_splash03"
+                motion:transitionEasing="accelerate" />
+
+            <!-- Button Flutter like Animation -->
+            <KeyAttribute
+                android:alpha="0"
+                android:scaleX="10"
+                android:scaleY="10"
+                motion:framePosition="69"
+                motion:motionTarget="@id/btn_flutter"
+                motion:transitionEasing="decelerate" />
+
+            <KeyAttribute
+                android:alpha="0.2"
+                android:scaleX="10"
+                android:scaleY="10"
+                motion:framePosition="70"
+                motion:motionTarget="@id/btn_flutter"
+                motion:transitionEasing="decelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="80"
+                motion:motionTarget="@id/btn_flutter"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1.15"
+                android:scaleY="1.15"
+                motion:framePosition="85"
+                motion:motionTarget="@id/btn_flutter"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="90"
+                motion:motionTarget="@id/btn_flutter"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1.08"
+                android:scaleY="1.08"
+                motion:framePosition="95"
+                motion:motionTarget="@id/btn_flutter"
+                motion:transitionEasing="accelerate" />
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="100"
+                motion:motionTarget="@id/btn_flutter"
+                motion:transitionEasing="accelerate" />
+
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint
+            android:id="@+id/btn_left_to_right"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/btn_faded"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_left_to_right" />
+
+        <Constraint
+            android:id="@+id/btn_scale_down"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_faded" />
+
+        <Constraint
+            android:id="@+id/btn_card_shuffle"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_scale_down" />
+
+        <Constraint
+            android:id="@+id/btn_splash01"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_card_shuffle" />
+
+        <Constraint
+            android:id="@+id/btn_splash02"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_splash01" />
+
+        <Constraint
+            android:id="@+id/btn_splash03"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_splash02" />
+
+        <Constraint
+            android:id="@+id/btn_flutter"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_splash03" />
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+
+        <Constraint
+            android:id="@+id/btn_left_to_right"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/btn_faded"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_left_to_right" />
+
+        <Constraint
+            android:id="@+id/btn_scale_down"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_faded" />
+
+        <Constraint
+            android:id="@+id/btn_card_shuffle"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_scale_down" />
+
+        <Constraint
+            android:id="@+id/btn_splash01"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_card_shuffle" />
+
+        <Constraint
+            android:id="@+id/btn_splash02"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_splash01" />
+
+        <Constraint
+            android:id="@+id/btn_splash03"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_splash02" />
+
+        <Constraint
+            android:id="@+id/btn_flutter"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/btn_splash03" />
+
+    </ConstraintSet>
+
+</MotionScene>

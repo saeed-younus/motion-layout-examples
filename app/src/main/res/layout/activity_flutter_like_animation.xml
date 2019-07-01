@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motion_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#450056"
+    app:layoutDescription="@xml/flutter_like_animation"
+    tools:context=".FlutterLikeAnimationActivity">
+
+    <TextView
+        android:id="@+id/touch_view"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="SWIPE"
+        android:textColor="#999"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:elevation="1000dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_left_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/first_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#aa560089"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/first_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        android:text="First"
+        android:textColor="#fff"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@id/first_image"
+        app:layout_constraintEnd_toEndOf="@+id/first_image"
+        app:layout_constraintStart_toStartOf="@+id/first_image"
+        app:layout_constraintTop_toTopOf="@id/first_image" />
+
+    <View
+        android:id="@+id/first_indicator"
+        android:layout_width="40dp"
+        android:layout_height="2dp"
+        android:layout_margin="16dp"
+        android:background="#fff"
+        android:elevation="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/first_image"
+        app:layout_constraintStart_toStartOf="@id/first_image"
+        app:layout_constraintTop_toBottomOf="@id/first_text" />
+
+    <ImageView
+        android:id="@+id/second_image"
+        android:layout_width="410dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="300dp"
+        android:background="#aaff3434"
+        app:layout_constraintStart_toEndOf="@+id/first_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/second_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        android:text="Second"
+        android:textColor="#fff"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@id/second_image"
+        app:layout_constraintEnd_toEndOf="@+id/second_image"
+        app:layout_constraintStart_toStartOf="@+id/second_image"
+        app:layout_constraintTop_toTopOf="@id/second_image" />
+
+    <View
+        android:id="@+id/second_indicator"
+        android:layout_width="40dp"
+        android:layout_height="2dp"
+        android:layout_margin="16dp"
+        android:background="#ccc"
+        android:elevation="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/second_image"
+        app:layout_constraintStart_toStartOf="@id/second_image"
+        app:layout_constraintTop_toBottomOf="@id/second_text" />
+
+    <ImageView
+        android:id="@+id/third_image"
+        android:layout_width="410dp"
+        android:layout_height="200dp"
+        android:background="#aaff7834"
+        app:layout_constraintStart_toEndOf="@+id/second_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/third_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        android:text="Third"
+        android:textColor="#fff"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@id/third_image"
+        app:layout_constraintEnd_toEndOf="@+id/third_image"
+        app:layout_constraintStart_toStartOf="@+id/third_image"
+        app:layout_constraintTop_toTopOf="@id/third_image" />
+
+    <View
+        android:id="@+id/third_indicator"
+        android:layout_width="40dp"
+        android:layout_height="2dp"
+        android:layout_margin="16dp"
+        android:background="#ccc"
+        android:elevation="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/third_image"
+        app:layout_constraintStart_toStartOf="@id/third_image"
+        app:layout_constraintTop_toBottomOf="@id/third_text" />
+
+    <ImageView
+        android:id="@+id/fourth_image"
+        android:layout_width="410dp"
+        android:layout_height="200dp"
+        android:background="#aaff8977"
+        app:layout_constraintStart_toEndOf="@+id/third_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fourth_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        android:text="Fourth"
+        android:textColor="#fff"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@id/fourth_image"
+        app:layout_constraintEnd_toEndOf="@+id/fourth_image"
+        app:layout_constraintStart_toStartOf="@+id/fourth_image"
+        app:layout_constraintTop_toTopOf="@id/fourth_image" />
+
+    <View
+        android:id="@+id/fourth_indicator"
+        android:layout_width="40dp"
+        android:layout_height="2dp"
+        android:layout_margin="16dp"
+        android:background="#ccc"
+        android:elevation="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/fourth_image"
+        app:layout_constraintStart_toStartOf="@id/fourth_image"
+        app:layout_constraintTop_toBottomOf="@id/fourth_text" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fourth_image" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

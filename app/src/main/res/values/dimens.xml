@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="max_padding">64dp</dimen>
+    <dimen name="spinner_height">44dp</dimen>
+    <dimen name="splash_text_size">54sp</dimen>
+</resources>
