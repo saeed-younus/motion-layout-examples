@@ -20,14 +20,14 @@ MotionLayout samples overview
 
 |  Title  |  GIF  | Layout | MotionScene | 
 | :----: | :----: | :----: | :----: |
-|  Box Movement Animation | <img src="https://i.imgur.com/pMepTYQ.gif" height="360" width="180" > | [Layout](motion-layout-examples/app/src/main/res/layout/activity_left_to_right_animation.xml) | [MotionScene](motion-layout-examples/app/src/main/res/xml/left_to_right_animation.xml) | 
-|  Faded Text Animation | <img src="https://i.imgur.com/bTLYJJo.gif" height="360" width="180" > | [Layout](motion-layout-examples/app/src/main/res/layout/activity_faded_animation.xml) | [MotionScene](motion-layout-examples/app/src/main/res/xml/faded_animation.xml) | 
-|  Text Scale down Animation | <img src="https://i.imgur.com/x5lGMFu.gif" height="360" width="180" > | [Layout](motion-layout-examples/app/src/main/res/layout/activity_scale_down_animation.xml) | [MotionScene](motion-layout-examples/app/src/main/res/xml/scale_down_animation.xml) | 
-|  Card Shuffle Example | <img src="https://i.imgur.com/cTqpvvG.gif" height="360" width="180" > | [Layout](motion-layout-examples/app/src/main/res/layout/activity_card_shuffle.xml) | [MotionScene](motion-layout-examples/app/src/main/res/xml/card_shuffle_animation.xml) | 
-|  Splash Screen (1/3) Example | <img src="https://i.imgur.com/60AEOvH.gif" height="360" width="180" > | [Layout](motion-layout-examples/app/src/main/res/layout/activity_splash01.xml) | [MotionScene](motion-layout-examples/app/src/main/res/xml/splash_01_animation.xml) | 
-|  Splash Screen (2/3) Example | <img src="https://i.imgur.com/twsBf2w.gif" height="360" width="180" > | [Layout](motion-layout-examples/app/src/main/res/layout/splash_02_animation.xml) | [MotionScene](motion-layout-examples/app/src/main/res/xml/splash_02_animation.xml) | 
-|  Splash Screen (3/3) Example | <img src="https://i.imgur.com/n5s1R12.gif" height="360" width="180" > | [Layout](motion-layout-examples/app/src/main/res/layout/splash_03_animation.xml) | [MotionScene](motion-layout-examples/app/src/main/res/xml/splash_03_animation.xml) | 
-|  Flutter Like Animation Example | <img src="https://i.imgur.com/TfMGxY2.gif" height="360" width="180" > | [Layout](motion-layout-examples/app/src/main/res/layout/activity_flutter_like_animation.xml) | [MotionScene](motion-layout-examples/app/src/main/res/xml/flutter_like_animation.xml) | 
+|  Box Movement Animation | <img src="https://i.imgur.com/pMepTYQ.gif" height="360" width="180" > | [Layout](app/src/main/res/layout/activity_left_to_right_animation.xml) | [MotionScene](app/src/main/res/xml/left_to_right_animation.xml) | 
+|  Faded Text Animation | <img src="https://i.imgur.com/bTLYJJo.gif" height="360" width="180" > | [Layout](app/src/main/res/layout/activity_faded_animation.xml) | [MotionScene](app/src/main/res/xml/faded_animation.xml) | 
+|  Text Scale down Animation | <img src="https://i.imgur.com/x5lGMFu.gif" height="360" width="180" > | [Layout](app/src/main/res/layout/activity_scale_down_animation.xml) | [MotionScene](app/src/main/res/xml/scale_down_animation.xml) | 
+|  Card Shuffle Example | <img src="https://i.imgur.com/cTqpvvG.gif" height="360" width="180" > | [Layout](app/src/main/res/layout/activity_card_shuffle.xml) | [MotionScene](app/src/main/res/xml/card_shuffle_animation.xml) | 
+|  Splash Screen (1/3) Example | <img src="https://i.imgur.com/60AEOvH.gif" height="360" width="180" > | [Layout](app/src/main/res/layout/activity_splash01.xml) | [MotionScene](app/src/main/res/xml/splash_01_animation.xml) | 
+|  Splash Screen (2/3) Example | <img src="https://i.imgur.com/twsBf2w.gif" height="360" width="180" > | [Layout](app/src/main/res/layout/splash_02_animation.xml) | [MotionScene](app/src/main/res/xml/splash_02_animation.xml) | 
+|  Splash Screen (3/3) Example | <img src="https://i.imgur.com/n5s1R12.gif" height="360" width="180" > | [Layout](app/src/main/res/layout/splash_03_animation.xml) | [MotionScene](app/src/main/res/xml/splash_03_animation.xml) | 
+|  Flutter Like Animation Example | <img src="https://i.imgur.com/TfMGxY2.gif" height="360" width="180" > | [Layout](app/src/main/res/layout/activity_flutter_like_animation.xml) | [MotionScene](app/src/main/res/xml/flutter_like_animation.xml) | 
 
 License
 -------
