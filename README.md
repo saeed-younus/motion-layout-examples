@@ -27,7 +27,7 @@ MotionLayout samples overview
 |  Splash Screen (1/3) Example | <img src="https://i.imgur.com/60AEOvH.gif" height="360" width="180" > | [Layout](app/src/main/res/layout/activity_splash01.xml) | [MotionScene](app/src/main/res/xml/splash_01_animation.xml) | 
 |  Splash Screen (2/3) Example | <img src="https://i.imgur.com/twsBf2w.gif" height="360" width="180" > | [Layout](app/src/main/res/layout/splash_02_animation.xml) | [MotionScene](app/src/main/res/xml/splash_02_animation.xml) | 
 |  Splash Screen (3/3) Example | <img src="https://i.imgur.com/n5s1R12.gif" height="360" width="180" > | [Layout](app/src/main/res/layout/splash_03_animation.xml) | [MotionScene](app/src/main/res/xml/splash_03_animation.xml) | 
-|  Flutter Like Animation Example | <img src="https://i.imgur.com/TfMGxY2.gif" height="360" width="180" > | [Layout](app/src/main/res/layout/activity_flutter_like_animation.xml) | [MotionScene](app/src/main/res/xml/flutter_like_animation.xml) | 
+|  Flutter Like Animation Example | <img src="https://i.imgur.com/crv1dEc.gif" height="360" width="180" > | [Layout](app/src/main/res/layout/activity_flutter_like_animation.xml) | [MotionScene](app/src/main/res/xml/flutter_like_animation.xml) | 
 
 License
 -------
