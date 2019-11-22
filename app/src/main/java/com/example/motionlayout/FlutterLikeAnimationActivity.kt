@@ -266,7 +266,7 @@ class FlutterLikeAnimationActivity : AppCompatActivity(), View.OnTouchListener {
         }
 
         // Returns the fragment to display for that page
-        override fun getItem(position: Int): Fragment? {
+        override fun getItem(position: Int): Fragment {
             when (position) {
                 0 // Fragment # 0 - This will show FirstFragment
                 -> {
